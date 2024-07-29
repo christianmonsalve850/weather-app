@@ -3,6 +3,7 @@
   padding: 0;
   font-family: sans-serif;
   color: #FFFFFF;
+  box-sizing: border-box;
 }
 
 body {
@@ -12,6 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .container {
@@ -21,26 +23,11 @@ body {
   border-radius: 25px;
 }
 
-.search-bar {
+.top {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 25px 25px 0 0;
+  padding: 2rem 2rem;
 }
 
-.search-bar input {
-  min-width: 500px;
-  min-height: 50px;
-  color: #b5b3b3;
-  margin-top: 30px;
-  background-color: #1E1E1E;
-  border: 0;
-  border-radius: 25px;
-  padding: 4px 40px;
-}
-
-.search-icon {
-  width: 25px;
-  height: 25px;
-  margin-top: 46px;
-  position: absolute;
-  margin-right: 535px;
-}
