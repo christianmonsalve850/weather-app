@@ -28,6 +28,9 @@ body {
   align-items: center;
   justify-content: space-around;
   border-radius: 25px 25px 0 0;
-  padding: 2rem 2rem;
+  padding: 2rem 0;
 }
 
+.content {
+  margin: -1rem 3rem;
+}
