@@ -12,6 +12,9 @@
 .forecast {
     display: inline-block;
     position: relative;
+    margin-left: 22px;
+    /* For now */
+    display: none;
 }
 
 .individual_widget {
@@ -24,7 +27,7 @@
 
 .individual_widget div  {
     background-color: #2d2c2c;
-    padding: 10px 0;
+    padding: 12px 0;
     width: 100%;
     border-radius: 30px 30px 0 0;
 }
@@ -36,11 +39,70 @@
 .individual_widget img {
     margin-top: 25px;
     margin-bottom: 20px;
-
 }
 
 .individual_widget span.temp {
     font-size: 2rem;
     margin-left: 8px;
-    color: #B5B3B3;
+    color: #dfdcdc;
+}
+
+.selected {
+    width: 180px;
+    height: 140px;
+    border-radius: 30px;
+    background-color: #BCCEDA;
+    color: #000000;
+}
+
+.selected div.top_div{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+    background-color: #AFCADC;
+}
+
+.selected div.top_div span {
+    color: #000000;
+}
+
+.selected span.temp {
+    font-size: 3rem;
+    color: #000000;
+}
+
+.selected img {
+    width: 60px;
+    height: 60px;
+}
+
+.selected div.bottom_div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 8px 12px;
+}
+
+.selected div.bottom_div label {
+    font-size: 1rem;
+    color: #000000;
+    margin-left: 5px;
+    padding: 0 20px;
+}
+
+.min_max {
+    background-color: #BCCEDA;
+    width: 180px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 18px;
+}
+
+.min_max span {
+    color: #000000;
 }
