@@ -13,8 +13,6 @@
     display: inline-block;
     position: relative;
     margin-left: 22px;
-    /* For now */
-    display: none;
 }
 
 .individual_widget {
@@ -53,6 +51,7 @@
     border-radius: 30px;
     background-color: #BCCEDA;
     color: #000000;
+    display: inline-block;
 }
 
 .selected div.top_div{
