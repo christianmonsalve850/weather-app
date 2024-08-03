@@ -5,7 +5,7 @@ function Navbar() {
         <>
             <div className={styles.search_bar}>
                 <img src="./src/assets/search.png" alt="search" />
-                <input type="text" placeholder="Search city..."/>
+                <input id="search-bar" type="text" placeholder="Search city..."/>
             </div>
         </>
     )
