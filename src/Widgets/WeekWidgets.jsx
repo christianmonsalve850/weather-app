@@ -4,13 +4,11 @@ import React, {useState, useEffect} from 'react';
 
 import axios from 'axios';
 
-
-
 function WeekWidgets() {
 
     const [weatherData, setWeatherData] = useState(null);
     const [city, setCity] = useState('Medellin');
-  
+
     const fetchWeatherData = async () => {
         try {
           const response = await axios.get('http://localhost:8000/data');
@@ -29,6 +27,7 @@ function WeekWidgets() {
 
     const daysOfWeek = ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
+    
     return (
         <>
             <button className={styles.week_btn}>Week</button><br />
