@@ -1,11 +1,11 @@
 import styles from "./TopPart.module.css"
 
-function CurrentCity({city}) {
+function CurrentCity({city, weatherData}) {
     return (
         <>
             <div className={styles.current_location}>
                 <img src="./src/assets/location.png" alt="location"/>
-                <p id="current-city">{city}</p>
+                <p id="current-city">{city}, {weatherData ? weatherData.sys.country : ""}</p>
             </div>
         </>
     );
