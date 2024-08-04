@@ -1,11 +1,13 @@
 import styles from './Widgets.module.css'
 
-function SelectedWeekWidget() {
+
+function SelectedWeekWidget({todaysDate}) {
+
     return (
         <>
             <div className={styles.selected}>
                 <div className={styles.top_div}>
-                    <span>Monday</span> 
+                    <span>{todaysDate}</span> 
                     <span>10:26 PM</span>
                 </div>
                 <div className={styles.bottom_div}>

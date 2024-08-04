@@ -9,12 +9,15 @@ import axios from 'axios';
 
 function App() {
   const [city, setCity] = useState("Medellin");
-  const [country, setCountry] = useState("CO");
   const [weatherData, setWeatherData] = useState(null);
 
   const fetchWeatherData = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/data');
+        const response = await axios.get('http://localhost:8000/data', {
+          params: {
+            city: city,
+          },
+        });
         setWeatherData(response.data);
       } catch (error) {
           console.error('Error fetching data:', error);
@@ -24,7 +27,6 @@ function App() {
 
   useEffect(() => { 
     fetchWeatherData();
-      console.log(weatherData);
   }, [city]);
 
   return (
