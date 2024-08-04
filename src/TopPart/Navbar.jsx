@@ -1,11 +1,9 @@
 import styles from "./TopPart.module.css"
 import React, {useState, useEffect} from "react";
 
-function Navbar() {
-    const [city, setCity] = useState("");
+function Navbar({city, setCity}) {
+
     const [input, setInput] = useState("");
-    
-    const searchBar = document.getElementById("search-bar");
 
     const handleInputChange = (e) => {
         setInput(e.target.value);
@@ -18,12 +16,11 @@ function Navbar() {
         }
     }
 
-
-    return(
+    return (
         <>
             <div className={styles.search_bar}>
                 <img src="./src/assets/search.png" alt="search" />
-                <input value={input} onKeyDown={checkIfEnter} onChange={handleInputChange} type="text" placeholder="Search city..."/>
+                <input id="search-bar" value={input} onKeyDown={checkIfEnter} onChange={handleInputChange} type="text" placeholder="Search city..."/>
             </div>
         </>
     )
