@@ -1,7 +1,10 @@
 import styles from './Widgets.module.css'
 
 
-function SelectedWeekWidget({todaysDate}) {
+function SelectedWeekWidget() {
+    const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const todaysDateIndex = new Date().getDay();
+    const todaysDate = daysOfWeek[todaysDateIndex];
 
     return (
         <>
