@@ -2,7 +2,7 @@ import CurrentCity from "./TopPart/CurrentCity";
 import Navbar from "./TopPart/Navbar";
 import Settings from "./TopPart/Settings";
 import Profile from "./TopPart/Profile";
-import WeekWidgets from "./Widgets/WeekWidgets";
+import WeekWidgets from "./Widgets/CurrentWeather";
 import { useState, useEffect } from "react";
 
 import axios from 'axios';

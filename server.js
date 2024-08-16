@@ -25,7 +25,7 @@ app.get('/data', async (req, res) => {
                 units: 'metric',
             },
         });
-        res.json(response.data)
+        res.json(response.data);
     } catch (error) {
         console.error('Error fetching data:', error);
         res.status(500).json({ error: 'Error fetching data' });
