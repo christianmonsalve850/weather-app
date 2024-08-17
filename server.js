@@ -15,14 +15,14 @@ app.get('/', (req, res) => {
 })
 
 app.get('/data', async (req, res) => {
-    const city = req.query.city || "Medellin";
+    const city = req.query.city;
 
     try {
         const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather`, {
             params: {
                 q: city,
                 appid: process.env.VITE_API_KEY,
-                units: 'metric',
+                units: 'imperial',
             },
         });
         res.json(response.data);

@@ -2,13 +2,13 @@ import CurrentCity from "./TopPart/CurrentCity";
 import Navbar from "./TopPart/Navbar";
 import Settings from "./TopPart/Settings";
 import Profile from "./TopPart/Profile";
-import WeekWidgets from "./Widgets/CurrentWeather";
+import CurrentWeather from "./Widgets/CurrentWeather";
 import { useState, useEffect } from "react";
 
 import axios from 'axios';
 
 function App() {
-  const [city, setCity] = useState("Medellin");
+  const [city, setCity] = useState("West New York");
   const [weatherData, setWeatherData] = useState(null);
 
   const fetchWeatherData = async () => {
@@ -41,7 +41,7 @@ function App() {
         </div>
         {/* CONTENT */}
         <div className="content">
-          <WeekWidgets city={city} weatherData={weatherData}></WeekWidgets>
+          <CurrentWeather city={city} weatherData={weatherData}></CurrentWeather>
         </div>
       </div>
     </>
