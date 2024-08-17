@@ -4,6 +4,7 @@ import Settings from "./TopPart/Settings";
 import Profile from "./TopPart/Profile";
 import CurrentWeather from "./Widgets/CurrentWeather";
 import TodaysHighlights from "./Widgets/TodaysHighlights";
+import ImportantCities from "./Widgets/ImportantCities";
 import { useState, useEffect } from "react";
 
 import axios from 'axios';
@@ -42,8 +43,13 @@ function App() {
         </div>
         {/* CONTENT */}
         <div className="content">
-          <CurrentWeather city={city} weatherData={weatherData}></CurrentWeather>
-          <TodaysHighlights city={city} weatherData={weatherData}></TodaysHighlights>
+          <div className="left_content">
+            <CurrentWeather city={city} weatherData={weatherData}></CurrentWeather>
+            <TodaysHighlights city={city} weatherData={weatherData}></TodaysHighlights>
+          </div>
+          <div className="right_content">
+            <ImportantCities></ImportantCities>
+          </div>
         </div>
       </div>
     </>

@@ -32,5 +32,15 @@ body {
 }
 
 .content {
-  margin: -1rem 3rem;
+  margin: -1rem 3rem 3rem;
+  display: flex;
+}
+
+.left_content {
+  flex: 1;
+}
+
+.right_content {
+  margin-top: 2rem;
+  margin-left: 1rem;
 }

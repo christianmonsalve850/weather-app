@@ -3,6 +3,7 @@
     text-decoration: underline;
     text-underline-offset: 5px;
     margin-bottom: 1.2rem;
+    margin-top: 0.6rem;
     color: #B5B3B3;
 }
 
@@ -75,19 +76,26 @@
     font-size: 1.2rem;
     text-decoration: underline;
     text-underline-offset: 5px;
-    margin-top: 0.8rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
     color: #B5B3B3;
 }
 
 .highlights {
     display: flex;
-    justify-content: space-around;
 }
 
 .highlight_widget {
-    width: 25%;
     height: 150px;
     background: #B5B3B3;
-    margin-top: 5rem;
-    /* filter: blur(3px); */
+    margin: 0rem 2rem;
+    flex: 1;
+    border-radius: 20px;
+}
+
+.important_cities {
+    width: 300px;
+    height: 100%;
+    background: #B5B3B3;
+    border-radius: 20px;
 }
