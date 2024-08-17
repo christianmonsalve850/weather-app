@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/data', async (req, res) => {
-    const city = req.query.city;
+    const city = req.query.city || "West New York";
 
     try {
         const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather`, {

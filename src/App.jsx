@@ -3,6 +3,7 @@ import Navbar from "./TopPart/Navbar";
 import Settings from "./TopPart/Settings";
 import Profile from "./TopPart/Profile";
 import CurrentWeather from "./Widgets/CurrentWeather";
+import TodaysHighlights from "./Widgets/TodaysHighlights";
 import { useState, useEffect } from "react";
 
 import axios from 'axios';
@@ -42,10 +43,11 @@ function App() {
         {/* CONTENT */}
         <div className="content">
           <CurrentWeather city={city} weatherData={weatherData}></CurrentWeather>
+          <TodaysHighlights city={city} weatherData={weatherData}></TodaysHighlights>
         </div>
       </div>
     </>
   );
 }
 
-export default App
+export default App;

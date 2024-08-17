@@ -1,7 +1,5 @@
 .todays_date {
-    border: none;
     font-size: 1.2rem;
-    background-color: transparent;
     text-decoration: underline;
     text-underline-offset: 5px;
     margin-bottom: 1.2rem;
@@ -71,4 +69,25 @@
     font-size: 1.3rem;
     text-align: center;
     font-weight: 100;
+}
+
+.todays_highlights {
+    font-size: 1.2rem;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    margin-top: 0.8rem;
+    color: #B5B3B3;
+}
+
+.highlights {
+    display: flex;
+    justify-content: space-around;
+}
+
+.highlight_widget {
+    width: 25%;
+    height: 150px;
+    background: #B5B3B3;
+    margin-top: 5rem;
+    /* filter: blur(3px); */
 }

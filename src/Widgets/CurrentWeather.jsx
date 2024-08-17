@@ -1,5 +1,4 @@
 import styles from './Widgets.module.css'
-import React, {useState, useEffect} from 'react';
 
 function CurrentWeather({weatherData}) {
 
@@ -23,7 +22,7 @@ function CurrentWeather({weatherData}) {
                     <img src="./src/assets/sunny.png" alt="forecast-image" />
                     <div>
                         <span>{Math.round(weatherData.main.temp)}°</span>
-                        <p>{weatherData.weather[0].description}</p>
+                        <p>{weatherData.weather[0].main}</p>
                     </div>
                 </div>
 
