@@ -38,8 +38,9 @@
 }
 
 .main_information img {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
+    margin-right: 1.5rem;
 }
 
 .main_information div {
@@ -52,7 +53,7 @@
 }
 
 .main_information div p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 100;
 }
 

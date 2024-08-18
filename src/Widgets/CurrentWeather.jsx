@@ -11,6 +11,8 @@ function CurrentWeather({weatherData}) {
     const day = daysOfWeek[today.getDay()];
     const date = today.getDate();
     const month = months[today.getMonth()];
+
+    const description = weatherData ? weatherData.weather[0].description : "";
     console.log(weatherData)
     return (
         <>
@@ -22,7 +24,7 @@ function CurrentWeather({weatherData}) {
                         <img src="./src/assets/sunny.png" alt="forecast-image" />
                         <div>
                             <span>{Math.round(weatherData.main.temp)}°</span>
-                            <p>{weatherData.weather[0].main}</p>
+                            <p>{description.charAt(0).toUpperCase() + description.slice(1)}</p>
                         </div>
                     </div>
 
