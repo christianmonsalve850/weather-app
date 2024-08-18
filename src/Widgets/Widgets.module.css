@@ -87,11 +87,30 @@
 }
 
 .highlight_widget {
+    display: flex;
+    flex-direction: column;
     height: 150px;
-    background: #B5B3B3;
+    background: #1f2123;
     margin: 0rem 2rem;
     flex: 1;
     border-radius: 20px;
+    padding: 1rem;
+}
+
+.highlight_widget label {
+    color: #b5b3b3;
+    font-weight: 100;
+}
+
+.highlight_widget span {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.highlight_widget p {
+    font-size: 1rem;
+    margin-top: 1.5rem;
 }
 
 .important_cities {

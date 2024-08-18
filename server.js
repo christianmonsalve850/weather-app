@@ -22,7 +22,7 @@ app.get('/data', async (req, res) => {
             params: {
                 q: city,
                 appid: process.env.VITE_API_KEY,
-                units: 'imperial',
+                units: 'metric',
             },
         });
         res.json(response.data);
