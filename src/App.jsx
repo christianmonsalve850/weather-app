@@ -10,7 +10,7 @@ import { useState, useEffect } from "react";
 import axios from 'axios';
 
 function App() {
-  const [city, setCity] = useState("West New York");
+  const [city, setCity] = useState("New York City");
   const [weatherData, setWeatherData] = useState(null);
 
   const fetchWeatherData = async () => {
@@ -48,7 +48,7 @@ function App() {
             <TodaysHighlights city={city} weatherData={weatherData}></TodaysHighlights>
           </div>
           <div className="right_content">
-            <ImportantCities></ImportantCities>
+            <ImportantCities city={city} setCity={setCity}></ImportantCities>
           </div>
         </div>
       </div>
