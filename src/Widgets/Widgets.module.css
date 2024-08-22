@@ -135,6 +135,12 @@
     cursor: pointer;
     padding: 1rem;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.city div {
+    display: flex;
     flex-direction: column;
 }
 
@@ -148,6 +154,12 @@
     cursor: pointer;
     padding: 1rem;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.last_city div {
+    display: flex;
     flex-direction: column;
 }
 
@@ -158,12 +170,31 @@
 .last_city label {
     color: #666c71;
 }
+
 .city span {
-    margin-top: 1rem;
+    margin-top: 0.8rem;
     color: #fff;
+    font-size: 1.2rem;
+    font-weight: 100;
 }
 
 .last_city span {
-    margin-top: 1rem;
+    margin-top: 0.8rem;
     color: #fff;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.city img {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+    margin-top: 0.9rem;
+}
+
+.last_city img {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+    margin-top: 0.9rem;
 }
