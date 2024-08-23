@@ -16,8 +16,7 @@ function TodaysHighlights({weatherData, celsius}) {
     const sunriseTime = sunriseDate.toLocaleTimeString('en-US', options);
     const sunsetTime = sunsetDate.toLocaleTimeString('en-US', options);
 
-
-    const windSpeed = weatherData ? (celsius ? weatherData.wind.speed * 3.6 : weatherData.wind.speed) : "";
+    const windSpeed = weatherData ? (celsius ? (weatherData.wind.speed * 3.6).toFixed(2): (weatherData.wind.speed).toFixed(2)) : null;
     const windSpeedUnits = celsius ? "km/h" : "mph";
     return (
         <>
@@ -27,7 +26,7 @@ function TodaysHighlights({weatherData, celsius}) {
                     <div className={styles.highlights}>
                         <div className={styles.highlight_widget}>
                             <label>Wind Status</label>
-                            <span>{windSpeed} {windSpeedUnits}</span>
+                            {windSpeed ? <span>{windSpeed} {windSpeedUnits}</span> : null} 
                         </div>
 
                         <div className={styles.highlight_widget}>
