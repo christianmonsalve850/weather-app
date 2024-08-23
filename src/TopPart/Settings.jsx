@@ -1,12 +1,11 @@
 import styles from "./TopPart.module.css"
 
-function Settings() {
-
+function Settings({celsius, selectC, selectF}) {
     return (
         <>
             <div className={styles.temp}>
-                <button className={styles.c_unit}>°C</button>
-                <button className={styles.f_unit}>°F</button>
+                <button onClick={selectC} className={`${styles.c_unit} ${celsius ? styles.selected : ""}`}>°C</button>
+                <button onClick={selectF} className={`${styles.f_unit} ${!celsius ? styles.selected : ""}`}>°F</button>
             </div>
 
 

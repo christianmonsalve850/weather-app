@@ -165,10 +165,12 @@
 
 .city label {
     color: #666c71;
+    cursor: pointer;
 }
 
 .last_city label {
     color: #666c71;
+    cursor: pointer;
 }
 
 .city span {
@@ -201,7 +203,7 @@
 
 .loading_container {
     width: 100%;
-    height: 450px;
+    height: 540px;
     display: flex;
     justify-content: center;
     align-items: center;

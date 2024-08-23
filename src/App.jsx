@@ -2,9 +2,9 @@ import CurrentCity from "./TopPart/CurrentCity";
 import Navbar from "./TopPart/Navbar";
 import Settings from "./TopPart/Settings";
 import Profile from "./TopPart/Profile";
-import CurrentWeather from "./Widgets/CurrentWeather";
-import TodaysHighlights from "./Widgets/TodaysHighlights";
-import ImportantCities from "./Widgets/ImportantCities";
+import CurrentWeather from "./Info/CurrentWeather";
+import TodaysHighlights from "./Info/TodaysHighlights";
+import ImportantCities from "./Info/ImportantCities";
 import { useState, useEffect } from "react";
 
 import axios from 'axios';
@@ -12,6 +12,15 @@ import axios from 'axios';
 function App() {
   const [city, setCity] = useState("New York City");
   const [weatherData, setWeatherData] = useState(null);
+  const [celsius, setCelsius] = useState(true);
+
+  const selectC = () => {
+    setCelsius(true);
+  };
+
+  const selectF = () => {
+    setCelsius(false);
+  }
 
   const fetchWeatherData = async () => {
       try {
@@ -38,7 +47,7 @@ function App() {
         <div className="top">
           <CurrentCity city={city} weatherData={weatherData}></CurrentCity>  
           <Navbar city={city} setCity={setCity}></Navbar>
-          <Settings></Settings>
+          <Settings celsius={celsius} selectC={selectC} selectF={selectF}></Settings>
           <Profile></Profile>
         </div>
         {/* CONTENT */}
