@@ -1,6 +1,6 @@
 import styles from './Widgets.module.css'
 
-function TodaysHighlights({weatherData}) {
+function TodaysHighlights({weatherData, celsius}) {
     const sunrise = weatherData ? weatherData.sys.sunrise : "";
     const sunset = weatherData ? weatherData.sys.sunset : "";
 
@@ -16,6 +16,9 @@ function TodaysHighlights({weatherData}) {
     const sunriseTime = sunriseDate.toLocaleTimeString('en-US', options);
     const sunsetTime = sunsetDate.toLocaleTimeString('en-US', options);
 
+
+    const windSpeed = weatherData ? (celsius ? weatherData.wind.speed * 3.6 : weatherData.wind.speed) : "";
+    const windSpeedUnits = celsius ? "km/h" : "mph";
     return (
         <>
             {weatherData ? 
@@ -24,7 +27,7 @@ function TodaysHighlights({weatherData}) {
                     <div className={styles.highlights}>
                         <div className={styles.highlight_widget}>
                             <label>Wind Status</label>
-                            <span>{weatherData.wind.speed} km/h</span>
+                            <span>{windSpeed} {windSpeedUnits}</span>
                         </div>
 
                         <div className={styles.highlight_widget}>

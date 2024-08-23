@@ -11,22 +11,26 @@ import axios from 'axios';
 
 function App() {
   const [city, setCity] = useState("New York City");
+  const [units, setUnits] = useState("metric");
   const [weatherData, setWeatherData] = useState(null);
   const [celsius, setCelsius] = useState(true);
 
   const selectC = () => {
     setCelsius(true);
+    setUnits("metric");
   };
 
   const selectF = () => {
     setCelsius(false);
-  }
+    setUnits("imperial");
+  };
 
   const fetchWeatherData = async () => {
       try {
         const response = await axios.get('http://localhost:8000/data', {
           params: {
             city: city,
+            units: units,
           },
         });
         setWeatherData(response.data);
@@ -38,7 +42,11 @@ function App() {
 
   useEffect(() => { 
     fetchWeatherData();
-  }, [city]);
+  }, [city, units]);
+
+  useEffect(() => {
+    fetchWeatherData();
+  }, [units]);
 
   return (
     <>
@@ -54,7 +62,7 @@ function App() {
         <div className="content">
           <div className="left_content">
             <CurrentWeather city={city} weatherData={weatherData}></CurrentWeather>
-            <TodaysHighlights city={city} weatherData={weatherData}></TodaysHighlights>
+            <TodaysHighlights celsius={celsius} city={city} weatherData={weatherData}></TodaysHighlights>
           </div>
           <div className="right_content">
             <ImportantCities city={city} setCity={setCity} weatherData={weatherData}></ImportantCities>
