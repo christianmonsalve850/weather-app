@@ -37,4 +37,5 @@ The aplication uses the OpenWeatherMap to fetch API
 This project is not currently licensed
 
 ## Copyright
-Flag Icons = https://www.flaticon.com/free-icons/united-states, Free for commercial use WITH ATTRIBUTION license
+Flag Icons = https://www.flaticon.com/free-icons/flags, Free for commercial use WITH ATTRIBUTION license
+Weather Icons = https://www.flaticon.com/free-icons/weather, Free for commercial use WITH ATTRIBUTION license

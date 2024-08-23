@@ -39,7 +39,11 @@ function TodaysHighlights({weatherData}) {
                         </div>
                     </div>
                 </>
-            : <p>Loading...</p>}
+            : 
+            <div className={styles.loading_container}>
+                <p>Loading...</p>
+            </div>
+            }
         </>
     )
 }

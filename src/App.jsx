@@ -48,7 +48,7 @@ function App() {
             <TodaysHighlights city={city} weatherData={weatherData}></TodaysHighlights>
           </div>
           <div className="right_content">
-            <ImportantCities city={city} setCity={setCity}></ImportantCities>
+            <ImportantCities city={city} setCity={setCity} weatherData={weatherData}></ImportantCities>
           </div>
         </div>
       </div>

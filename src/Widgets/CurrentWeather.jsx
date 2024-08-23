@@ -13,15 +13,31 @@ function CurrentWeather({weatherData}) {
     const month = months[today.getMonth()];
 
     const description = weatherData ? weatherData.weather[0].description : "";
-    console.log(weatherData)
+
+    let descriptions = {
+        "clear sky": "./src/assets/forecast/sun.png",
+        "few clouds": "./src/assets/forecast/few-clouds.png",
+        "scattered clouds": "./src/assets/forecast/scattered-clouds.png",
+        "broken clouds": "./src/assets/forecast/broken-clouds.png",
+        "shower rain": "./src/assets/forecast/shower-rain.png",
+        "rain": "./src/assets/forecast/rain.png",
+        "thunderstorm": "./src/assets/forecast/thunderstorm.png",
+        "snow": "./src/assets/forecast/snow.png",
+        "mist": "./src/assets/forecast/mist.png",
+        "overcast clouds": "./src/assets/forecast/broken-clouds.png",
+        "smoke": "./src/assets/forecast/mist.png",
+        "haze": "./src/assets/forecast/mist.png",
+        "fog": "./src/assets/forecast/mist.png",
+    };
+
     return (
         <>
-            <p className={styles.todays_date}>{`${day} ${date}, ${month}`}</p><br />
             {weatherData ? 
             <>
+                <p className={styles.todays_date}>{`${day} ${date}, ${month}`}</p><br />
                 <div className={styles.separator}>
                     <div className={styles.main_information}>
-                        <img src="./src/assets/sunny.png" alt="forecast-image" />
+                    <a href="https://www.flaticon.com/free-icons/weather" title="sun icons"><img src={descriptions[description]} alt="forecast-image" /></a>
                         <div>
                             <span>{Math.round(weatherData.main.temp)}°</span>
                             <p>{description.charAt(0).toUpperCase() + description.slice(1)}</p>
@@ -53,7 +69,7 @@ function CurrentWeather({weatherData}) {
                         </div>
                     </div>
                 </div>
-            </> : <p>Loading...</p>}
+            </> : <></>}
         </>
     );
 }
