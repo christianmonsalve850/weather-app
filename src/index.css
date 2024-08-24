@@ -44,3 +44,17 @@ body {
   margin-top: 2rem;
   margin-left: 1rem;
 }
+
+.loading_container {
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading_container p {
+  font-size: 5rem;
+  font-weight: 300;
+  font-family: serif;
+}

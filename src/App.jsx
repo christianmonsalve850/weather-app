@@ -51,23 +51,29 @@ function App() {
   return (
     <>
       <div className="container">
-        {/* TOP PART */}
-        <div className="top">
-          <CurrentCity city={city} weatherData={weatherData}></CurrentCity>  
-          <Navbar city={city} setCity={setCity}></Navbar>
-          <Settings celsius={celsius} selectC={selectC} selectF={selectF}></Settings>
-          <Profile></Profile>
-        </div>
-        {/* CONTENT */}
-        <div className="content">
-          <div className="left_content">
-            <CurrentWeather city={city} weatherData={weatherData}></CurrentWeather>
-            <TodaysHighlights celsius={celsius} city={city} weatherData={weatherData}></TodaysHighlights>
+        {weatherData ? 
+        <>
+          <div className="top">
+            <CurrentCity city={city} weatherData={weatherData}></CurrentCity>  
+            <Navbar city={city} setCity={setCity}></Navbar>
+            <Settings celsius={celsius} selectC={selectC} selectF={selectF}></Settings>
+            <Profile></Profile>
           </div>
-          <div className="right_content">
-            <ImportantCities city={city} setCity={setCity} weatherData={weatherData}></ImportantCities>
+          {/* CONTENT */}
+          <div className="content">
+            <div className="left_content">
+              <CurrentWeather city={city} weatherData={weatherData}></CurrentWeather>
+              <TodaysHighlights celsius={celsius} city={city} weatherData={weatherData}></TodaysHighlights>
+            </div>
+            <div className="right_content">
+              <ImportantCities city={city} setCity={setCity} weatherData={weatherData}></ImportantCities>
+            </div>
           </div>
-        </div>
+        </>
+        :         
+        <div className="loading_container">
+          <p>Loading...</p>
+        </div>}
       </div>
     </>
   );

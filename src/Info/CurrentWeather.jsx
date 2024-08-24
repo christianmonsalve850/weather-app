@@ -28,6 +28,7 @@ function CurrentWeather({weatherData}) {
         "smoke": "./src/assets/forecast/mist.png",
         "haze": "./src/assets/forecast/mist.png",
         "fog": "./src/assets/forecast/mist.png",
+        "moderate rain": "./src/assets/forecast/shower-rain.png",
     };
 
     return (
