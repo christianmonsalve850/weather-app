@@ -6,7 +6,7 @@ Weather App is a simple and intuitive application that connects to an API to fet
 ## Features
 - Display current weather
 - Search weather by city
-- Toggle between light and dark mode
+- Give daily highlights
 
 ## Installation Instructions
 To install and run the Weather App, follow these steps:
