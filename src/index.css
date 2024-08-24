@@ -59,3 +59,24 @@ body {
   font-weight: 300;
   font-family: serif;
 }
+
+.no_wifi_connection {
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.no_wifi_connection p {
+  font-size: 3rem;
+  font-weight: 300;
+  font-family: serif;
+}
+
+.no_wifi_connection span {
+  font-size: 3rem;
+  font-weight: 300;
+  font-family: serif;
+  color: #7f1010;
+}

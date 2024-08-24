@@ -5,6 +5,7 @@ import Profile from "./TopPart/Profile";
 import CurrentWeather from "./Info/CurrentWeather";
 import TodaysHighlights from "./Info/TodaysHighlights";
 import ImportantCities from "./Info/ImportantCities";
+import LoadingScreen from "./LoadingScreen";
 import { useState, useEffect } from "react";
 
 import axios from 'axios';
@@ -53,6 +54,7 @@ function App() {
       <div className="container">
         {weatherData ? 
         <>
+          {/* TOP PART */}
           <div className="top">
             <CurrentCity city={city} weatherData={weatherData}></CurrentCity>  
             <Navbar city={city} setCity={setCity}></Navbar>
@@ -70,10 +72,7 @@ function App() {
             </div>
           </div>
         </>
-        :         
-        <div className="loading_container">
-          <p>Loading...</p>
-        </div>}
+        :<LoadingScreen></LoadingScreen>}
       </div>
     </>
   );
