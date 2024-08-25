@@ -6,6 +6,7 @@ import CurrentWeather from "./Info/CurrentWeather";
 import TodaysHighlights from "./Info/TodaysHighlights";
 import ImportantCities from "./Info/ImportantCities";
 import LoadingScreen from "./LoadingScreen";
+import Footer from "./Footer";
 import { useState, useEffect } from "react";
 
 import axios from 'axios';
@@ -74,6 +75,7 @@ function App() {
         </>
         :<LoadingScreen></LoadingScreen>}
       </div>
+      <Footer></Footer>
     </>
   );
 }

@@ -80,3 +80,25 @@ body {
   font-family: serif;
   color: #7f1010;
 }
+
+footer {
+  display: flex;
+  padding: 3rem;
+  color: #fff;
+  background-color: #1e1d1f;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  margin-top: 4rem;
+  justify-content: space-between;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+}
+
+footer div label {
+  color: #6d6b6b;
+  margin-bottom: 1rem;
+}
