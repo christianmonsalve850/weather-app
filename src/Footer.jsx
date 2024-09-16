@@ -5,7 +5,7 @@ function Footer() {
                 <div>
                     <label>Contact</label>
                     <li>Email: chrismon850@gmail.com</li>
-                    <li>Linkedin: <a href="https://www.linkedin.com/in/christian-monsalve-95803b168/">Christian Monsalve</a></li>
+                    <li>Linkedin: <a target="_blank" href="https://www.linkedin.com/in/christian-monsalve-95803b168/">Christian Monsalve</a></li>
                     <li>Github: <a target="_blank" href="https://github.com/ChrisCodes0206">ChrisCodes0206</a></li>
                 </div>
                 <div>

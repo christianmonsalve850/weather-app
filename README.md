@@ -14,6 +14,7 @@ To install and run the Weather App, follow these steps:
 1. git clone <repository-url>
 2. cd weather-app
 3. npm install
+5. npm run backend
 4. npm run dev
 
 This project uses Vite to create and manage the React project.
