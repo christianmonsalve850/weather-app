@@ -6,7 +6,7 @@ const app = express();
 require('dotenv').config()
 
 const PORT = 8000;
-console.log("API KEY:", process.env.VITE_API_KEY);
+
 app.use(cors());
 app.use(express.json());
 

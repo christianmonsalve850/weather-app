@@ -17,6 +17,7 @@ function App() {
   const [weatherData, setWeatherData] = useState(null);
   const [celsius, setCelsius] = useState(true);
 
+ 
   const selectC = () => {
     setCelsius(true);
     setUnits("metric");
@@ -28,8 +29,9 @@ function App() {
   };
 
   const fetchWeatherData = async () => {
+
       try {
-        const response = await axios.get('http://localhost:8000/data', {
+        const response = await axios.get('https://weather-app-t8d3.onrender.com/data', {
           params: {
             city: city,
             units: units,
