@@ -19,7 +19,7 @@ function Navbar({setCity}) {
     return (
         <>
             <div className={styles.search_bar}>
-                <img src="./src/assets/search.png" alt="search" />
+                <img src="./public/assets/search.png" alt="search" />
                 <input value={input} onKeyDown={checkIfEnter} onChange={handleInputChange} type="text" placeholder="Search city..." autoComplete="off"/>
             </div>
         </>

@@ -4,7 +4,7 @@ function CurrentCity({weatherData}) {
     return (
         <>
             <div className={styles.current_location}>
-                <img src="./src/assets/location.png" alt="location"/>
+                <img src="./public/assets/location.png" alt="location"/>
                 <p id="current-city">{weatherData ? `${weatherData.name}, ${weatherData.sys.country}` : ""}</p>
             </div>
         </>

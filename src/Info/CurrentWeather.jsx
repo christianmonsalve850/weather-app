@@ -15,20 +15,20 @@ function CurrentWeather({weatherData}) {
     const description = weatherData ? weatherData.weather[0].description : "";
 
     let descriptions = {
-        "clear sky": "./src/assets/forecast/sun.png",
-        "few clouds": "./src/assets/forecast/few-clouds.png",
-        "scattered clouds": "./src/assets/forecast/scattered-clouds.png",
-        "broken clouds": "./src/assets/forecast/broken-clouds.png",
-        "shower rain": "./src/assets/forecast/shower-rain.png",
-        "rain": "./src/assets/forecast/rain.png",
-        "thunderstorm": "./src/assets/forecast/thunderstorm.png",
-        "snow": "./src/assets/forecast/snow.png",
-        "mist": "./src/assets/forecast/mist.png",
-        "overcast clouds": "./src/assets/forecast/broken-clouds.png",
-        "smoke": "./src/assets/forecast/mist.png",
-        "haze": "./src/assets/forecast/mist.png",
-        "fog": "./src/assets/forecast/mist.png",
-        "moderate rain": "./src/assets/forecast/shower-rain.png",
+        "clear sky": "./public/assets/forecast/sun.png",
+        "few clouds": "./public/assets/forecast/few-clouds.png",
+        "scattered clouds": "./public/assets/forecast/scattered-clouds.png",
+        "broken clouds": "./public/assets/forecast/broken-clouds.png",
+        "shower rain": "./public/assets/forecast/shower-rain.png",
+        "rain": "./public/assets/forecast/rain.png",
+        "thunderstorm": "./public/assets/forecast/thunderstorm.png",
+        "snow": "./public/assets/forecast/snow.png",
+        "mist": "./public/assets/forecast/mist.png",
+        "overcast clouds": "./public/assets/forecast/broken-clouds.png",
+        "smoke": "./public/assets/forecast/mist.png",
+        "haze": "./public/assets/forecast/mist.png",
+        "fog": "./public/assets/forecast/mist.png",
+        "moderate rain": "./public/assets/forecast/shower-rain.png",
     };
 
     return (
