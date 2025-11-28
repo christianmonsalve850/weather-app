@@ -15,20 +15,20 @@ function CurrentWeather({weatherData}) {
     const description = weatherData ? weatherData.weather[0].description : "";
 
     let descriptions = {
-        "clear sky": "./public/assets/forecast/sun.png",
-        "few clouds": "./public/assets/forecast/few-clouds.png",
-        "scattered clouds": "./public/assets/forecast/scattered-clouds.png",
-        "broken clouds": "./public/assets/forecast/broken-clouds.png",
-        "shower rain": "./public/assets/forecast/shower-rain.png",
-        "rain": "./public/assets/forecast/rain.png",
-        "thunderstorm": "./public/assets/forecast/thunderstorm.png",
-        "snow": "./public/assets/forecast/snow.png",
-        "mist": "./public/assets/forecast/mist.png",
-        "overcast clouds": "./public/assets/forecast/broken-clouds.png",
-        "smoke": "./public/assets/forecast/mist.png",
-        "haze": "./public/assets/forecast/mist.png",
-        "fog": "./public/assets/forecast/mist.png",
-        "moderate rain": "./public/assets/forecast/shower-rain.png",
+        "clear sky": `${import.meta.env.BASE_URL}assets/forecast/sun.png`,
+        "few clouds": `${import.meta.env.BASE_URL}assets/forecast/few-clouds.png`,
+        "scattered clouds": `${import.meta.env.BASE_URL}assets/forecast/scattered-clouds.png`,
+        "broken clouds": `${import.meta.env.BASE_URL}assets/forecast/broken-clouds.png`,
+        "shower rain": `${import.meta.env.BASE_URL}assets/forecast/shower-rain.png`,
+        "rain": `${import.meta.env.BASE_URL}assets/forecast/rain.png`,
+        "thunderstorm": `${import.meta.env.BASE_URL}assets/forecast/thunderstorm.png`,
+        "snow": `${import.meta.env.BASE_URL}assets/forecast/snow.png`,
+        "mist": `${import.meta.env.BASE_URL}assets/forecast/mist.png`,
+        "overcast clouds": `${import.meta.env.BASE_URL}assets/forecast/broken-clouds.png`,
+        "smoke": `${import.meta.env.BASE_URL}assets/forecast/mist.png`,
+        "haze": `${import.meta.env.BASE_URL}assets/forecast/mist.png`,
+        "fog": `${import.meta.env.BASE_URL}assets/forecast/mist.png`,
+        "moderate rain": `${import.meta.env.BASE_URL}assets/forecast/shower-rain.png`,
     };
 
     return (
