@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "commonjs",
-  "homepage": "https://ChrisCodes0206.github.io/weather-app/",
+  "homepage": "https://christianmonsalve850.github.io/weather-app/",
   "scripts": {
     "dev": "vite",
     "start": "node server.js",
