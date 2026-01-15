@@ -1,5 +1,5 @@
 import styles from "./TopPart.module.css"
-import React, {useState} from "react";
+import {useState} from "react";
 
 function Navbar({setCity}) {
 
@@ -19,7 +19,7 @@ function Navbar({setCity}) {
     return (
         <>
             <div className={styles.search_bar}>
-                <img src={`${import.meta.env.BASE_URL}assets/search.png`} alt="search" />
+                <img src={new URL('/assets/search.png', import.meta.url).href} alt="search" />
                 <input value={input} onKeyDown={checkIfEnter} onChange={handleInputChange} type="text" placeholder="Search city..." autoComplete="off"/>
             </div>
         </>

@@ -15,20 +15,20 @@ function CurrentWeather({weatherData}) {
     const description = weatherData ? weatherData.weather[0].description : "";
 
     let descriptions = {
-        "clear sky": `${import.meta.env.BASE_URL}assets/forecast/sun.png`,
-        "few clouds": `${import.meta.env.BASE_URL}assets/forecast/few-clouds.png`,
-        "scattered clouds": `${import.meta.env.BASE_URL}assets/forecast/scattered-clouds.png`,
-        "broken clouds": `${import.meta.env.BASE_URL}assets/forecast/broken-clouds.png`,
-        "shower rain": `${import.meta.env.BASE_URL}assets/forecast/shower-rain.png`,
-        "rain": `${import.meta.env.BASE_URL}assets/forecast/rain.png`,
-        "thunderstorm": `${import.meta.env.BASE_URL}assets/forecast/thunderstorm.png`,
-        "snow": `${import.meta.env.BASE_URL}assets/forecast/snow.png`,
-        "mist": `${import.meta.env.BASE_URL}assets/forecast/mist.png`,
-        "overcast clouds": `${import.meta.env.BASE_URL}assets/forecast/broken-clouds.png`,
-        "smoke": `${import.meta.env.BASE_URL}assets/forecast/mist.png`,
-        "haze": `${import.meta.env.BASE_URL}assets/forecast/mist.png`,
-        "fog": `${import.meta.env.BASE_URL}assets/forecast/mist.png`,
-        "moderate rain": `${import.meta.env.BASE_URL}assets/forecast/shower-rain.png`,
+        "clear sky": new URL('/assets/forecast/sun.png', import.meta.url).href,
+        "few clouds": new URL('/assets/forecast/few-clouds.png', import.meta.url).href,
+        "scattered clouds": new URL('/assets/forecast/scattered-clouds.png', import.meta.url).href,
+        "broken clouds": new URL('/assets/forecast/broken-clouds.png', import.meta.url).href,
+        "shower rain": new URL('/assets/forecast/shower-rain.png', import.meta.url).href,
+        "rain": new URL('/assets/forecast/rain.png', import.meta.url).href,
+        "thunderstorm": new URL('/assets/forecast/thunderstorm.png', import.meta.url).href,
+        "snow": new URL('/assets/forecast/snow.png', import.meta.url).href,
+        "mist": new URL('/assets/forecast/mist.png', import.meta.url).href,
+        "overcast clouds": new URL('/assets/forecast/broken-clouds.png', import.meta.url).href,
+        "smoke": new URL('/assets/forecast/mist.png', import.meta.url).href,
+        "haze": new URL('/assets/forecast/mist.png', import.meta.url).href,
+        "fog": new URL('/assets/forecast/mist.png', import.meta.url).href,
+        "moderate rain": new URL('/assets/forecast/shower-rain.png', import.meta.url).href,
     };
 
     return (
